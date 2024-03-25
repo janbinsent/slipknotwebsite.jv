@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
     // Function to redirect after animation completes
     function redirectAfterAnimation() {
       // Redirect to main page
-      window.location.href = "main.html";
+      window.location.href = "./main";
     }
   
     // Get the duration of the animation

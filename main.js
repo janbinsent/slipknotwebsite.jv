@@ -9,5 +9,5 @@ declineButton.addEventListener('click', redirectToMainPage);
 // Function to redirect to the main page
 function redirectToMainPage() {
     // Redirect to the main page URL
-    window.location.href = 'main2.html'; // Replace 'main.html' with your actual main page URL
+    window.location.href = './main2'; // Replace 'main.html' with your actual main page URL
 }
