@@ -1,0 +1,141 @@
+body {
+  background-image: url(slip.jpg);
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Set height to viewport height */
+}
+
+
+.loader {
+  width: 160px; /* Adjust the width */
+  height: 100px; /* Adjust the height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center align horizontally and vertically */
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: rgb(255, 0, 0);
+  font-size:xx-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px; /* Increase letter spacing */
+  left: 0;
+  right: 0;
+  margin: auto; /* Center align horizontally */
+}
+
+.load {
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: block;
+  height: 32px; /* Adjust the height */
+  width: 32px; /* Adjust the width */
+  bottom: 0;
+  position: absolute;
+  transform: translateX(50%);
+  animation: loading_713 3.5s ease both infinite;
+  left: 0;
+  right: 0;
+  margin: auto; /* Center align horizontally */
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease both infinite;
+}
+
+@keyframes text_713 {
+  0% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    letter-spacing: 3px;
+    transform: translateX(40px);
+  }
+
+  80% {
+    letter-spacing: 2px;
+    transform: translateX(50px);
+  }
+
+  90% {
+    letter-spacing: 3px;
+    transform: translateX(0px);
+  }
+
+  100% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading_713 {
+  0% {
+    width: 32px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  80% {
+    width: 32px;
+    transform: translateX(50%);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    width: 32px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading2_713 {
+  0% {
+    transform: translateX(0px);
+    width: 32px;
+  }
+
+  40% {
+    transform: translateX(0%);
+    width: 80%;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  90% {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    width: 32px;
+  }
+}
+
+
